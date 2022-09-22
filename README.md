@@ -1,2 +1,1 @@
-# reversing
-# haha
+# writeups for reversing
