@@ -1,4 +1,19 @@
-### ELF x86 no software breakpoints
+# cracking writeup
+## 0protection
+
+[ELF x86 - 0protection](https://www.root-me.org/en/Challenges/Cracking/ELF-x86-Basic)
+
+程序很简单, 调用getString获取输入，之后调用strcmp比较输入和"123456789"是否相同，使用strings直接可以看到这个字符串。
+
+## basic
+[ELF x86 - Basic](http://challenge01.root-me.org/cracking/ch2/ch2.zip)
+
+- 程序流程先读入一个字符串作为username，然后将该username和字符串"john"比较，
+- 之后读入一个字符串password，将password字符串与字符串"the ripper"比较，相同的话输出密码。
+
+## no software breakpoints
+
+[ELF x86 - No software breakpoints](http://challenge01.root-me.org/cracking/ch20/ch20.bin)
 
 程序功能很简单，输入密码，密码正确即可，
 - 程序只有两个函数，分别为start函数和sub\_8048115函数
